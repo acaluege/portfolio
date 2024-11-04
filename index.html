@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Celso Caluege</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.jpg" class="logo">
+                <img src="images/pinguin.jpg" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -20,8 +21,143 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-text">
+                <p>Developer | SysAdmin | Monitoring | ERP Systems | IPTV | Data Analyst</p>
+                <h1>Hi, I'm <span>Celso Caluege </span> from Angola</h1>
+            </div>
         </div>
     </div>
-
+    <!------------------ABOUT ME--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ac.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>lorenmasjjabsjjkakjskjhakjshdkjhasjkdhjkashdhashdkj
+                    jbskcjbkjaskbkajshkdjhkajshdkjahskjdhjkashdkjas
+                    jabskjbkjaskdjbkajsbdkjabsckjbkajsbckjbaksjbc
+                    absckbkjabskjcbkasbcjkbakjsbckjbasjkcbjkabskjcbkjjkbaksbckjaskjcbkjasbc
+                    jscbkjabskcbakjsbckjbakjsbckjbaskjcbjkabskjcbjkasbcjkbajsc</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Web app Development</li>
+                            <li><span>App Developer</span><br>Building Android/iOS apps</li>
+                            <li><span>SysAdmin</span><br>Linux and Windows</li>
+                            <li><span>Monitoring</span><br>Nagios/Naemon/Zabbix/Cacti</li>
+                            <li><span>Data Analyst</span><br>Excel/ELK/SQL/IPTV</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Enginer of Development System at ZAP TV</li>
+                            <li><span>2015 - 2022</span><br>Administration Systems at Rangel AO</li>
+                            <li><span>2015 - 202</span><br>Administration Systems at Rangel AO</li>
+                            <li><span>2015 - 2022</span><br>Administration Systems at Rangel AO</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Licenciatura in computation science | IMETRO University</li>
+                            <li><span>Web Developer</span><br>Web app Development</li>
+                            <li><span>App Developer</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+<!-- ----------------------SERVICES------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>  
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Loream kjskjsdbbvbbbbbbbbbbbbbbbbbbbbbbbb</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Loream kjskjsdbbvbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Loream kjskjsdbbvbbbbbbbbbbbbbbbbbbbbbb</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2>SysAdmin</h2>
+                <p>Loream kjskjsdbbvbbbbbbbbbbbbbbbbbbbbbb</p>
+                <a href="#">learn more</a>
+            </div>
+             <div>
+                <i class="fas fa-app-store"></i>
+                <h2>Monitoring</h2>
+                <p>Loream kjskjsdbbvbbbbbbbbbbbbbbbbbbbbbb</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-app-store"></i>
+                <h2>Data Analyst</h2>
+                <p>Loream kjskjsdbbvbbbbbbbbbbbbbbbbbbbbbb</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!--- ---------Portfolio-------------------- --> 
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/casacona.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/totvs.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/zap1.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        
+        var tablinks = document.getElementsByClassName('tab-links');  
+        var tabcontents = document.getElementsByClassName('tab-contents');  
+        
+        function opentab(tabname){           
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+       
+    
 </body>
 </html>
