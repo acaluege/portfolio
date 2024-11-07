@@ -302,6 +302,30 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+/* -----------------------css for small screen ---------------*/
+@media only screen and (max-width: 600px);
+    #header{
+        background-image: url(images/caluege.jpeg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size:16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+}
 
 
 
