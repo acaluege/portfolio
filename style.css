@@ -373,6 +373,9 @@ nav .fas{
 .contact-left, .contact-right{
     flex-basis: none;
 }
+.copyright{
+    font-size: 14px;
+}
 }
 
 
