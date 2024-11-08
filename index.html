@@ -186,12 +186,11 @@
                     <a href="images/cv-ac.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form action="send-email.php" method="POST">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
+                <form action="https://formspree.io/f/{form_id}" method="post">
+                    <label for="email">Your Email</label>
+                    <input name="Email" id="email" type="email">
+                    <button type="submit">Submit</button>
+                </form>
 
                 </div>
             </div>
